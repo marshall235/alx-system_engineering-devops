@@ -1,1 +1,1 @@
-Shell basics project
+Shell command basics project
