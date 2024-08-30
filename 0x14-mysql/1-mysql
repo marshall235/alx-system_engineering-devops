@@ -1,0 +1,7 @@
+Creating a user on Mysql and granting SLAVE and CLIENT Privileges
+
+#Command used
+CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'password';
+GRANT REPLICATION SLAVE ON *.* TO 'holberton_user'@'localhost';
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
