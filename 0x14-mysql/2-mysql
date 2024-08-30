@@ -1,0 +1,16 @@
+Create a database: tyrell_corp.
+Select the database: Switch to tyrell_corp for subsequent operations.
+Create a table: nexus6 with columns id (auto-incrementing primary key) and name (varchar).
+Insert data: Add a row with the name 'Leon' into the nexus6 table.
+Grant permissions: Allow holberton_user to select data from the nexus6 table.
+
+CREATE DATABASE tyrell_corp;
+USE tyrell_corp;
+CREATE TABLE nexus6 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50)
+);
+INSERT INTO nexus6 (name) VALUES ('Leon');
+GRANT SELECT ON tyrell_corp.nexus6 TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
+
