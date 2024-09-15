@@ -14,7 +14,7 @@ frontend  fredy-frontend
         bind *:80
         mode http
         default_backend fredy-backend
-backend ehoneah-backend
+backend fredy-backend
         balance roundrobin
         server 164253-web-01 54.160.95.238:80 check
         server 164253-web-02 18.235.248.233:80 check
