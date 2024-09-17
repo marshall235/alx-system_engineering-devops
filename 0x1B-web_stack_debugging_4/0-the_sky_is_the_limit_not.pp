@@ -1,5 +1,3 @@
-This manuscript increases the amount of traffuc an Nginx server can handele
-
 # This manuscript increases the amount of traffic an Nginx server can handle
 
 # Increase the ULIMIT of the default file
